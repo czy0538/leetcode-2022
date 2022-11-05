@@ -30,9 +30,27 @@
 3. [数组：移除元素](./problems/0027.移除元素.md)
 
    - [x] 27. 移除元素【快慢指针】（2022年11月04日）
-   - [ ] 26.删除排序数组中的重复项
+
+   - [x] 26.删除排序数组中的重复项（2022年11月05日）
+
+     c++的stl unique就是干这个的
+
+     ```c++
+     class Solution {
+     public:
+         int removeDuplicates(vector<int>& nums) {
+             auto iter = unique(nums.begin(), nums.end());
+             return iter - nums.begin();
+         }
+     };
+     ```
+
+     非常的快，但是还是双指针更通用。
+
    - [ ] 283.移动零
+
    - [ ] 844.比较含退格的字符串
+
    - [ ] 977.有序数组的平方
 
 4. [数组：序数组的平方](./problems/0977.有序数组的平方.md)    
