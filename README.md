@@ -57,7 +57,10 @@
 
    - [x] 977.有序数组的平方（2022年11月08日）
 
-4. [数组：序数组的平方](./problems/0977.有序数组的平方.md)    
+4. [数组：序数组的平方](./problems/0977.有序数组的平方.md)   （2022年11月08日）
+
+   - [ ] [904.水果成篮](https://leetcode.cn/problems/fruit-into-baskets/)
+   - [ ] [76.最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/)
 
 5. [数组：长度最小的子数组](./problems/0209.长度最小的子数组.md)
 
