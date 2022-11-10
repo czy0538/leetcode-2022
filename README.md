@@ -49,7 +49,7 @@
 
    - [x] 283.移动零（2022年11月06日）
 
-   - [x] **844.比较含退格的字符串（2022年11月07日）**
+   - [x] **844.比较含退格的字符串（2022年11月07日）**:pushpin:
 
      用栈非常简单，但是考虑下不用栈原地的方法
 
@@ -59,7 +59,7 @@
 
 4. [数组：序数组的平方](./problems/0977.有序数组的平方.md)   （2022年11月08日）
 
-   - [ ] [904.水果成篮](https://leetcode.cn/problems/fruit-into-baskets/)
+   - [x] **[904.水果成篮](https://leetcode.cn/problems/fruit-into-baskets/)**（2022年11月10日，:pushpin:）
    - [ ] [76.最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/)
 
 5. [数组：长度最小的子数组](./problems/0209.长度最小的子数组.md)
