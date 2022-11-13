@@ -60,7 +60,7 @@
 4. [数组：序数组的平方](./problems/0977.有序数组的平方.md)   （2022年11月08日）
 
    - [x] **[904.水果成篮](https://leetcode.cn/problems/fruit-into-baskets/)**（2022年11月10日，:pushpin:）
-   - [ ] [76.最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/)
+   - [x] [76.最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/)2022年11月13日，:pushpin:）
 
 5. [数组：长度最小的子数组](./problems/0209.长度最小的子数组.md)
 
