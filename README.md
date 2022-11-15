@@ -62,11 +62,11 @@
 5. [数组：长度最小的子数组](./problems/0209.长度最小的子数组.md)滑动窗口问题(2022年11月9日)
 
    - [x] **[904.水果成篮](https://leetcode.cn/problems/fruit-into-baskets/)**（2022年11月10日，:pushpin:）
-   - [x] [76.最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/)2022年11月13日，:pushpin:）
+   - [x] [76.最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/)（2022年11月13日，:pushpin:）
 
-6. [数组：螺旋矩阵II](./problems/0059.螺旋矩阵II.md)
+6. [数组：螺旋矩阵II](./problems/0059.螺旋矩阵II.md)（2022年11月14日，:pushpin:）
 
-   - [ ] 54.螺旋矩阵
+   - [x] 54.螺旋矩阵（2022年11月15日，:pushpin:）
 
    - [ ] 剑指Offer 29.顺时针打印矩阵
 
