@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.cc": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "iosfwd": "cpp"
     }
 }
