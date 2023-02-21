@@ -2,6 +2,7 @@
     "files.associations": {
         "*.cc": "cpp",
         "string": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "__config": "cpp"
     }
 }
