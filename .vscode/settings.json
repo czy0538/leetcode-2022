@@ -3,6 +3,8 @@
         "*.cc": "cpp",
         "string": "cpp",
         "iosfwd": "cpp",
-        "__config": "cpp"
+        "__config": "cpp",
+        "vector": "cpp",
+        "deque": "cpp"
     }
 }
