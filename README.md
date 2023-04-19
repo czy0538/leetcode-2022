@@ -203,7 +203,7 @@ csview 补充题目
 6. [103. 二叉树的锯齿形层序遍历](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/)(2023年04月16日)
 7. [199. 二叉树的右视图](https://leetcode.cn/problems/binary-tree-right-side-view/)（2023年04月17日）
 8. [124. 二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)(2023年04月18日)
-9. [543. 二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/)
+9. [543. 二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/)(2023年04月19日)
 10. [129. 求根节点到叶节点数字之和](https://leetcode.cn/problems/sum-root-to-leaf-numbers/)
 11. [124. 二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)
 
