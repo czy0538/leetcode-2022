@@ -228,26 +228,105 @@ csview 补充题目
 <img src='https://img-blog.csdnimg.cn/20210219192050666.png' width=600 alt='回溯算法大纲'> </img></div>
 
 1. [关于回溯算法，你该了解这些！](./problems/回溯算法理论基础.md)
+
 2. [回溯算法：组合问题](./problems/0077.组合.md)(2023年04月12日)
+
 3. [回溯算法：组合问题再剪剪枝](./problems/0077.组合优化.md)(2023年04月12日)
+
 4. [回溯算法：求组合总和！](./problems/0216.组合总和III.md)(2023年05月02日)
+
 5. [回溯算法：电话号码的字母组合](./problems/0017.电话号码的字母组合.md)（2023年05月03日）
+
 6. [本周小结！（回溯算法系列一）](./problems/周总结/20201030回溯周末总结.md)
+
 7. [回溯算法：求组合总和（二）](./problems/0039.组合总和.md)（2023年05月04日）
+
 8. [回溯算法：求组合总和（三）](./problems/0040.组合总和II.md)（2023年05月05日，:pushpin:）
+
 9. [回溯算法：分割回文串](./problems/0131.分割回文串.md)(2023年05月06日，简单方法,:pushpin:)
+
 10. [回溯算法：复原IP地址](./problems/0093.复原IP地址.md)(2023年05月08日，:pushpin:)
+
 11. [回溯算法：求子集问题！](./problems/0078.子集.md)(2023年05月09日)
+
 12. [本周小结！（回溯算法系列二）](./problems/周总结/20201107回溯周末总结.md)
+
 13. [回溯算法：求子集问题（二）](./problems/0090.子集II.md)（2023年05月10日)
-14. [回溯算法：递增子序列](./problems/0491.递增子序列.md)
+
+14. [回溯算法：递增子序列](./problems/0491.递增子序列.md)(2023年05月12日)
+
+    回溯算法的去重问题的总结：去重主要是同层去重，即广度去重，深度不用去重。
+
+    大体上分为可排序问题和不可排序问题。
+
+    对于可排序问题的去重，需要先对输入进行排序，然后在 for 循环处，判断该元素与上个元素是否相等。
+
+    ```c++
+    for (auto it = beg; it < end; it++) {
+                if (it != beg && *(it - 1) == *it) {
+                    continue;
+                }
+      // ...
+    }
+    
+    sort(nums.begin(),nums.end());
+    ```
+
+    对于不可排序的，如该题，如果范围给出了，那么可以用数组，效率会高。注意是同层去重，因此不需要 pop 啥的。
+
+    ```c++
+    			  array<bool, 201> used{};
+            for (auto it = beg; it < end; it++) {
+                if (used[*it+100] || (!path.empty() && *it < path.back())) {
+                    continue;
+                }
+                path.push_back(*it);
+                used[*it + 100] = true;
+                if (path.size() > 1) {
+                    result.push_back(path);
+                }
+                backtracing(it + 1, end);
+                path.pop_back();
+            }
+        }
+    
+    ```
+
+    而如果范围也没有给出，就只能用unordered_set了。
+
+    ```c++
+             unordered_set<int> used;
+             for (auto it = beg; it < end; it++) {
+                 if (used.find(*it)!=used.end() || (!path.empty()&&*it < path.back())) {
+                     continue;
+                 }
+                 path.push_back(*it);
+                 used.insert(*it);
+                 if (path.size() > 1) {
+                     result.push_back(path);
+                 }
+                 backtracing(it + 1, end);
+                 path.pop_back();
+             }
+         }
+    ```
+
+    
+
 15. [回溯算法：排列问题！](./problems/0046.全排列.md)
+
 16. [回溯算法：排列问题（二）](./problems/0047.全排列II.md)
+
 17. [本周小结！（回溯算法系列三）](./problems/周总结/20201112回溯周末总结.md)
+
 18. [回溯算法去重问题的另一种写法](./problems/回溯算法去重问题的另一种写法.md)
+
 19. [回溯算法：重新安排行程](./problems/0332.重新安排行程.md)
+
 20. [回溯算法：N皇后问题](./problems/0051.N皇后.md)
+
 21. [回溯算法：解数独](./problems/0037.解数独.md)
+
 22. [一篇总结带你彻底搞透回溯算法！](./problems/回溯总结.md)
 
 ## 贪心算法
