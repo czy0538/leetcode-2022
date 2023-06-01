@@ -61,35 +61,37 @@ using namespace std;
 // };
 
 // 这个方法的优点在于大大的减少了查找的时间
+
 class Solution {
-private:
-    // unordered_map<出发机场, map<到达机场, 航班次数>> targets
-    unordered_map<string, map<string, int>> targets;
-    // map 本身就是有序的，因此不用重新排序。
-    bool backtracking(int ticketNum, vector<string>& result) {
-        if (result.size() == ticketNum + 1) {
+public:
+    vector<string> result;
+    map<string, map<string, int>> routes;
+    int size;
+    vector<string> findItinerary(vector<vector<string>> &tickets) {
+        size = tickets.size();
+        for (auto &t : tickets) {
+            routes[t[0]][t[1]]++;
+        }
+        result.push_back("JFK");
+        backtracing();
+        return result;
+    }
+
+    bool backtracing() {
+        if (result.size() == size + 1) {
             return true;
         }
-        for (pair<const string, int>& target : targets[result[result.size() - 1]]) {
-            if (target.second > 0) { // 记录到达机场是否飞过了
-                result.push_back(target.first);
-                target.second--;
-                if (backtracking(ticketNum, result)) return true;
+        for (auto &i : routes[result.back()]) {
+            if (i.second > 0) {
+                i.second--;
+                result.push_back(i.first);
+                if (backtracing()) {
+                    return true;
+                }
                 result.pop_back();
-                target.second++;
+                i.second++;
             }
         }
         return false;
-    }
-
-public:
-    vector<string> findItinerary(vector<vector<string>>& tickets) {
-        vector<string> result;
-        for (const vector<string>& vec : tickets) {
-            targets[vec[0]][vec[1]]++; // 记录映射关系
-        }
-        result.push_back("JFK"); // 起始机场
-        backtracking(tickets.size(), result);
-        return result;
     }
 };
