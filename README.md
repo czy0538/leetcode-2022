@@ -341,7 +341,7 @@ csview 补充题目
 <img src='https://code-thinking-1253855093.file.myqcloud.com/pics/20210917104315.png' width=600 alt='贪心算法大纲'> </img></div>
 
 1. [关于贪心算法，你该了解这些！](./problems/贪心算法理论基础.md)
-2. [贪心算法：分发饼干](./problems/0455.分发饼干.md)
+2. [贪心算法：分发饼干](./problems/0455.分发饼干.md)(2023年06月08日)
 3. [贪心算法：摆动序列](./problems/0376.摆动序列.md)
 4. [贪心算法：最大子序和](./problems/0053.最大子序和.md)
 5. [本周小结！（贪心算法系列一）](./problems/周总结/20201126贪心周末总结.md)
