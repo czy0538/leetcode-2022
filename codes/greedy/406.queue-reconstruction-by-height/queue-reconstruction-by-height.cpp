@@ -23,10 +23,15 @@ public:
         for (auto i = 1; i < people.size(); i++) {
             auto it = q.begin();
             auto count = people[i][1];
-            while (it != q.end() && count > 0) {
-                if ((*it)[0] >= people[i][0]) {
-                    count--;
-                }
+            // while (it != q.end() && count > 0) {
+            //     if ((*it)[0] >= people[i][0]) {
+            //         count--;
+            //     }
+            //     it++;
+            // }
+            // (*it)[0] >= people[i][0] 这一条可以说是一定满足的，因为本身就是按照这个顺序排序的
+            // 这里不用再判断了
+            while (count--) { // 寻找在插入位置
                 it++;
             }
             q.insert(it, people[i]);
