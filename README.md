@@ -4,6 +4,7 @@
 
 - go题解：[halfrost/LeetCode-Go: ✅ Solutions to LeetCode by Go, 100% test coverage, runtime beats 100% / LeetCode 题解 (github.com)](https://github.com/halfrost/LeetCode-Go)
 - [youngyangyang04/leetcode-master: 《代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫！🔥🔥 来看看，你会发现相见恨晚！🚀 (github.com)](https://github.com/youngyangyang04/leetcode-master)
+- 此外学习 ACwing的内容，参考[ACwing](./ACwing.md)，同时用 go 和 c++完成，并且兼顾库中的内容。
 
 # 刷题记录
 
