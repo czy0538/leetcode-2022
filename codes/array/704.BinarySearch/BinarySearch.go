@@ -4,6 +4,7 @@ import "fmt"
 
 // 左闭右开版本
 func search(nums []int, target int) int {
+	
 	l := 0
 	r := len(nums)
 	i := (l + r) / 2

@@ -2,34 +2,43 @@
 #include <vector>
 #include <fmt/core.h>
 using namespace std;
+// 2023年07月06日 修改为 acwing版本
+// 找右边界
+// class Solution {
+// public:
+//     int search(vector<int>& nums, int target) {
+//         int mid, l = 0, r = nums.size() - 1;
+//         while (l < r) {
+//             mid = l + r + 1 >> 1;
+//             if (nums[mid] <= target) {
+//                 l = mid;
+//             } else {
+//                 r = mid - 1;
+//             }
+//         }
+//         if (nums[l] == target) {
+//             return l;
+//         }
+//         return -1;
+//     }
+// };
+
+// 找左边界
 class Solution {
 public:
-    // 左右都闭版本
     int search(vector<int>& nums, int target) {
-        if (target < nums.front() || target > nums.back()) {
-            return -1;
-        }
-        // 如果没有上面的语句处理第一个元素的情况，请务必这里用int，否则只有一个元素时候会有问题
-        decltype(nums.size()) i = nums.size() / 2, l = 0, r = nums.size() - 1;
-        while (l <= r) {
-            if (nums[i] == target) {
-                return i;
-            } else if (nums[i] > target) {
-                r = i - 1;
+        int mid, l = 0, r = nums.size() - 1;
+        while (l < r) {
+            mid = l + r >> 1;
+            if (nums[mid] >= target) {
+                r = mid;
             } else {
-                l = i + 1;
+                l = mid + 1;
             }
-            i = l + (r - l) / 2;
+        }
+        if (nums[l] == target) {
+            return l;
         }
         return -1;
     }
 };
-
-int main() {
-    fmt::print("hello world\n");
-    vector<int> nums{-1, 0, 3, 5, 9, 12};
-    Solution s;
-    fmt::print("{}\n", s.search(nums, 2));
-
-    return 0;
-}
