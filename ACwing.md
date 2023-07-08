@@ -214,9 +214,9 @@ double bsearch_3(double l, double r)
 
   二分
 
-- AcWing 789. 数的范围
+- AcWing 789. 数的范围（2023年07月08日）
 
-- AcWing 790. 数的三次方根
+- AcWing 790. 数的三次方根（2023年07月08日）
   高精度
 
 - AcWing 791. 高精度加法
