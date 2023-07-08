@@ -5,6 +5,7 @@
 - go题解：[halfrost/LeetCode-Go: ✅ Solutions to LeetCode by Go, 100% test coverage, runtime beats 100% / LeetCode 题解 (github.com)](https://github.com/halfrost/LeetCode-Go)
 - [youngyangyang04/leetcode-master: 《代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫！🔥🔥 来看看，你会发现相见恨晚！🚀 (github.com)](https://github.com/youngyangyang04/leetcode-master)
 - 此外学习 ACwing的内容，参考[ACwing](./ACwing.md)，同时用 go 和 c++完成，并且兼顾库中的内容。
+- [Notes](./Notes.md)中主要记录的内容是在刷题过程中可能经常会遇到的 go 和 c++的库相关的内容，这部分内容可能已经在相关的笔记里面记过了，但是这里也单独拿出来再记一遍。
 
 # 刷题记录
 
@@ -546,3 +547,7 @@ csview 补充题目
 
 ## 位运算
 * [1356.根据数字二进制下1的数目排序](./problems/1356.根据数字二进制下1的数目排序.md)
+
+# 每日一题
+
+- [两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/description/),双指针,2023年07月08日
