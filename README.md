@@ -123,7 +123,7 @@
 6. [哈希表：两数之和](./problems/0001.两数之和.md)（2022年12月05日）
 7. [哈希表：四数相加II](./problems/0454.四数相加II.md)（2022年12月06日，:pushpin:）
 8. [哈希表：赎金信](./problems/0383.赎金信.md)（2022年12月07日）
-9. [哈希表：三数之和](./problems/0015.三数之和.md)（2022年12月16日，:pushpin:）
+9. [哈希表：三数之和](./problems/0015.三数之和.md)（2022年12月16日，:pushpin:，2023年07月09日）
 10. [双指针法：四数之和](./problems/0018.四数之和.md)
 11. [哈希表：总结篇！](./problems/哈希表总结.md)
 
@@ -551,3 +551,4 @@ csview 补充题目
 # 每日一题
 
 - [两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/description/),双指针,2023年07月08日
+- [15. 三数之和](https://leetcode.cn/problems/3sum/),双指针，2023年07月09日
