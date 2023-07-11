@@ -105,7 +105,7 @@
 
 4. [链表：链表相交](./problems/面试题02.07.链表相交.md)（2022年11月22日）
 
-5. [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/)（2022年11月23日，:pushpin:）
+5. [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/)（2022年11月23日，:pushpin:，2023年07月11日）
 
 6. [链表：环形链表](./problems/0142.环形链表II.md)（2022年11月24日，:pushpin:）
 
