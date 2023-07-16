@@ -86,6 +86,10 @@
 			"utility": "cpp",
 			"stop_token": "cpp",
 			"cinttypes": "cpp"
-		}
+		},
+		"[python]": {
+			"editor.defaultFormatter": "ms-python.autopep8"
+		},
+		"python.formatting.provider": "none"
 	}
 }
