@@ -22,6 +22,7 @@ int main() {
         }
         if(nums[l]!=target){
             printf("-1 -1\n");
+            continue;
         }
         left = l;
         r = n - 1;

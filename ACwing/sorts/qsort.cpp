@@ -22,7 +22,7 @@ void qsort(vector<int>& q, int l, int r) {
             swap(q[i], q[j]);
         }
     }
-    // 递归
+    // 递归，边界一定要注意
     qsort(q, l, j);
     qsort(q, j + 1, r);
 }
