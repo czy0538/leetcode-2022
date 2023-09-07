@@ -180,6 +180,59 @@ double bsearch_3(double l, double r)
 
 
 
+## 前缀和
+
+### 一维前缀和
+
+对于 $a_1$ ... $a_n$，注意下标从1开始，可以方便的处理边界。
+
+前缀和$s_i=a_1+...+a_i$
+
+**如何求$s_i$**
+
+```c++
+s[0]=0;
+for i=1;i<=n;i++{
+  s[i]=s[i-1]+a[i];
+}
+```
+
+**前缀和作用**
+
+能快速的求出原数组中某段数[l,r]的和。时间复杂度O(1)
+
+S[r]-S[l-1]
+
+
+
+### 二维前缀和
+
+快速求出子矩阵的和
+
+![image-20230907215426175](https://picgo-1305367394.cos.ap-beijing.myqcloud.com/picgo/202309072154378.png)
+
+S[i,j]=a[i,j]+s[i-1,j]+s[i,j-1]-s[i-1,j-1]
+
+二维的在用go写的时候就要注意scanf的垃圾性能问题，可以用如下方法替代
+
+bufio.NewScanner的底层buf数组有个最大缓存限制的，是64K，也就是说按照标准的Scan，一行最多64K的数据大小，题目里如果超过这个范围，比如一行20万数据，每个数据范围还是int32内的，那这就至少800K的大小了，还没算上中间的空格，所以默认的buf空间肯定是不够的，这时候需要调用Buffer方法，手动给Scanner分配一个满足题目空间的buf数组，其余照常。使用方法如下：
+
+```go
+sc := bufio.NewScanner(os.Stdin) // 实例化 NewScanner
+bs := make([]byte, 2000*1024) // 缓存
+sc.Buffer(bs, len(bs))
+sc.Scan() // Scan 方法 该方法好比 iterator 中的 Next 方法，默认ScanLines 返回一行文本，不包括行尾的换行符
+fmt.Println(sc.Text()) // 该方法应该在 Scan 调用后调用.Text 返回的是 string
+line := strings.Split(scanner.Text(), " ")
+for j := 1; j <= len(line); j++ { //把该行的数据再转为数字
+            a[i][j], _ = strconv.Atoi(line[j-1])
+}
+```
+
+
+
+## 差分
+
 
 
 
@@ -251,8 +304,6 @@ double bsearch_3(double l, double r)
   区间合并
 
 - AcWing 803. 区间合并
-
-
 
 
 
