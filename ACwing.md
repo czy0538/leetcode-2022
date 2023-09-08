@@ -224,6 +224,7 @@ sc.Buffer(bs, len(bs))
 sc.Scan() // Scan 方法 该方法好比 iterator 中的 Next 方法，默认ScanLines 返回一行文本，不包括行尾的换行符
 fmt.Println(sc.Text()) // 该方法应该在 Scan 调用后调用.Text 返回的是 string
 line := strings.Split(scanner.Text(), " ")
+
 for j := 1; j <= len(line); j++ { //把该行的数据再转为数字
             a[i][j], _ = strconv.Atoi(line[j-1])
 }
@@ -233,9 +234,17 @@ for j := 1; j <= len(line); j++ { //把该行的数据再转为数字
 
 ## 差分
 
+差分是前缀和的逆运算。
 
+b数组是a数组的差分，a数组是b数组的前缀和。
 
+<img src="https://picgo-1305367394.cos.ap-beijing.myqcloud.com/picgo/202309081014770.png" alt="image-20230908101441689" style="zoom:50%;" />
 
+作用在于：例如我们想要a[l,r]中间所有的数都+c，可以降低时间复杂度。
+
+我们只需要 b[l]+c，然后b[r+1]-c，这样借助b求出的a在该范围内就都+c
+
+<img src="https://picgo-1305367394.cos.ap-beijing.myqcloud.com/picgo/202309081044633.png" alt="image-20230908104447584" style="zoom:67%;" />
 
 ## 题目
 
