@@ -246,6 +246,25 @@ b数组是a数组的差分，a数组是b数组的前缀和。
 
 <img src="https://picgo-1305367394.cos.ap-beijing.myqcloud.com/picgo/202309081044633.png" alt="image-20230908104447584" style="zoom:67%;" />
 
+## 位运算
+
+- n的二进制表示第k位是几
+
+```
+n>>k&1 
+```
+
+- lowbit(x) 返回x的最后一位（最右边）的1
+
+  ```
+  x=0b1010
+  lowbix(x)=0b10
+  
+  lowbit(x)=x&-x=x&(~x+1)
+  ```
+
+  可以用来统计x中有多少个1，每次把最后一个1减掉、
+
 ## 题目
 
 ​	快速排序
