@@ -269,9 +269,9 @@ n>>k&1
 
 值域很大，但是其中值的个数比较少
 
-![image-20230919150359785](https://picgo-1305367394.cos.ap-beijing.myqcloud.com/picgo/202309191503893.png)
+<img src="https://picgo-1305367394.cos.ap-beijing.myqcloud.com/picgo/202309191503893.png" alt="image-20230919150359785" style="zoom:50%;" />
 
-![image-20230919150608865](https://picgo-1305367394.cos.ap-beijing.myqcloud.com/picgo/202309191506909.png)
+<img src="https://picgo-1305367394.cos.ap-beijing.myqcloud.com/picgo/202309191506909.png" alt="image-20230919150608865" style="zoom:50%;" />
 
 排完序以后的下标就相当于是映射到的值，然后通过二分查找找到该值.
 
@@ -279,7 +279,7 @@ alls中加入了所有需要查询的下标。直接看802题更容易理解。
 
 ## 区间合并
 
-
+<img src="https://picgo-1305367394.cos.ap-beijing.myqcloud.com/picgo/202309201019735.png" alt="image-20230920101912676" style="zoom:33%;" />
 
 ## 题目
 
