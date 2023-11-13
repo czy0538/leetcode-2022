@@ -548,7 +548,7 @@ csview 补充题目
 ## 位运算
 * [1356.根据数字二进制下1的数目排序](./problems/1356.根据数字二进制下1的数目排序.md)
 
-# 每日一题
+# 其他题目
 
 - [两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/description/),双指针,2023年07月08日
 
@@ -565,3 +565,9 @@ csview 补充题目
   一定要注意，这种后面会不会超过数据范围。
 
   ![image-20230715101127476](https://picgo-1305367394.cos.ap-beijing.myqcloud.com/picgo/202307151011581.png)
+
+- [307 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/)，2023年11月13日
+
+  树状数组，所有的同时要求了更新某个数和求区间和的题目都可以用这个方法。
+
+  add函数和prefixSum函数时间复杂度均为O(logn)
