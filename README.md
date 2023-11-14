@@ -571,3 +571,6 @@ csview 补充题目
   树状数组，所有的同时要求了更新某个数和求区间和的题目都可以用这个方法。
 
   add函数和prefixSum函数时间复杂度均为O(logn)
+
+- [4.寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/)，二分查找进阶，2023年11月14日
+- [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/),双指针，2023年11月14日
