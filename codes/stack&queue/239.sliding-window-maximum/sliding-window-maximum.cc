@@ -1,6 +1,7 @@
 #include <vector>
 #include <deque>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
 /*
@@ -50,42 +51,43 @@ using namespace std;
 //     }
 // };
 
-template <class T>
 class SingleQueue {
-private:
-    deque<T> d;
+    deque<int> d;
 
 public:
-    void pop_front(T value) {
-        if (!d.empty() && d.front() == value) {
+    void pop_front(int val) {
+        if (!d.empty() && d.front() == val) {
             d.pop_front();
         }
     }
-    T front() {
-        return d.front();
-    }
-
-    void push(T value) {
-        while (!d.empty() && d.back() < value) {
+    // 核心在这里，弹出所有比加入元素小的元素，因为他们无法被输出
+    void push_back(int val) {
+        // 注意这里不能加入等于，否则如果有多个相同元素，会被提前弹出
+        while (!d.empty() && d.back() < val) {
             d.pop_back();
         }
-        d.push_back(value);
+        d.push_back(val);
+    }
+
+    int front() {
+        return d.front();
     }
 };
 
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-        SingleQueue<int> q;
         vector<int> ans;
-        for (int i = 0; i < k; ++i) {
-            q.push(nums[i]);
+        SingleQueue s;
+        for (int i = 0; i < k; i++) {
+            s.push_back(nums[i]);
         }
-        ans.push_back(q.front());
-        for (int i = k; i < nums.size(); ++i) {
-            q.pop_front(nums[i - k]);
-            q.push(nums[i]);
-            ans.push_back(q.front());
+        ans.push_back(s.front());
+        for (int i = k; i < nums.size(); i++) {
+            // 首先检查被移出的元素是否是队头元素，如果是则移出。
+            s.pop_front(nums[i - k]);
+            s.push_back(nums[i]);
+            ans.push_back(s.front());
         }
         return ans;
     }
